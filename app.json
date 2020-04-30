@@ -40,6 +40,9 @@
     "pages/customer/list/list",
     "pages/customer/auth/auth",
     "pages/customer/zcuslist/zcuslist",
+    "pages/customer/add/add",
+    "pages/customer/addwh/addwh",
+    "pages/customer/cuslist/cuslist",
     "pages/spike/spike",
     "pages/group/group"
   ],

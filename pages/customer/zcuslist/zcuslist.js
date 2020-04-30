@@ -32,6 +32,7 @@ Page({
   bindGetUserInfo(e) {
     let that=this
     let token = wx.getStorageSync('token');
+    console.log(token + "===================")
     wx.showLoading({
       title: '加载中',
     })
@@ -39,6 +40,7 @@ Page({
       that.setFid()
       return false;
     }else{
+      console.log(e.detail)
       if (e.detail.userInfo) {
         //用户按了允许授权按钮
         user.loginByWeixin(e.detail).then(res => {
