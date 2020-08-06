@@ -17,12 +17,13 @@ Page({
     floorGoods: [],
     banner: [],
     channel: [],
+    categoryList: [],
     goodsCount: 0
   },
   onShareAppMessage: function () {
     return {
-      title: '51Shop',
-      desc: '51商城',
+      title: 'XinAnShop',
+      desc: '新安宠物商城',
       path: '/pages/index/index'
     }
   },
@@ -30,6 +31,19 @@ Page({
     // 增加下拉刷新数据的功能
     var self = this;
     self.getIndexData();
+  },
+  kind: function (e) {
+    getApp().globalData.homeCurrentTab = e.currentTarget.dataset.id;
+     console.log("kind", e.currentTarget.dataset.id);
+   },
+  getCurrentCategory: function (id) {
+    let that = this;
+    util.request(api.CatalogList).then(function (res) {
+      that.setData({
+        categoryList: res.data.categoryList,
+      });
+      wx.hideLoading();
+    });
   },
   getIndexData: function () {
     let that = this;
@@ -92,7 +106,7 @@ Page({
         goodsCount: res.data.goodsCount
       });
     });
-
+    this.getCurrentCategory();
   },
   onLoad: function (options) {
     this.getIndexData();

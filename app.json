@@ -49,7 +49,7 @@
   "window": {
     "backgroundTextStyle": "dark",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "51商城",
+    "navigationBarTitleText": "新安宠物商城",
     "navigationBarTextStyle": "black",
     "enablePullDownRefresh": true
   },
@@ -70,12 +70,6 @@
         "iconPath": "static/images/ic_menu_sort_nor.png",
         "selectedIconPath": "static/images/ic_menu_sort_pressed.png",
         "text": "分类"
-      },
-      {
-        "pagePath": "pages/topic/topic",
-        "iconPath": "static/images/ic_menu_topic_nor.png",
-        "selectedIconPath": "static/images/ic_menu_topic_pressed.png",
-        "text": "专题"
       },
       {
         "pagePath": "pages/cart/cart",

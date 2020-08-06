@@ -3,7 +3,7 @@
   <view class='cont'>
     <view class='selinfo'>
       <image class="sel" src="../../../static/images/logo40.png"></image>
-      <label>嗨街二号 申请获得</label>
+      <label>新安宠物 申请获得</label>
     </view>
     <view class='tit'>以下权限</view>
     <view class='selinfo'>

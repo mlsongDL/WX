@@ -53,9 +53,33 @@
         </navigator>
        </view>
        <view class='li'>
+         <navigator url="/pages/ucenter/order/order?id=201" class="a">
+          <text class="icon dfk"></text>
+          <text class="txt">待评价</text>
+        </navigator>
+       </view>
+       <view class='li'>
          <navigator url="/pages/ucenter/return/return?id=201" class="a">
           <text class="icon tk"></text>
           <text class="txt">退货/退款</text>
+        </navigator>
+       </view>
+       <view class='li'>
+         <navigator class="a">
+          <text class="icon"></text>
+          <text class="txt"></text>
+        </navigator>
+       </view>
+       <view class='li'>
+         <navigator class="a">
+          <text class="icon"></text>
+          <text class="txt"></text>
+        </navigator>
+       </view>
+       <view class='li'>
+         <navigator class="a">
+          <text class="icon"></text>
+          <text class="txt"></text>
         </navigator>
        </view>
     </view> 

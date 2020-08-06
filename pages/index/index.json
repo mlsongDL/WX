@@ -1,5 +1,5 @@
 {
-  "navigationBarTitleText": "首页",
+  "navigationBarTitleText": "新安宠物",
   "usingComponents": {
     "index-type-data": "../../component/index-type-data/index-type-data"
   }

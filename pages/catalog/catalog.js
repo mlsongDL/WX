@@ -48,6 +48,16 @@ Page({
   },
   onShow: function () {
     // 页面显示
+    this.data.currentTab = getApp().globalData.homeCurrentTab;
+    if (this.data.currentTab) {
+      console.log("switch", this.data.currentTab)
+      this.data.currentCategory.id = this.data.currentTab;
+      var self = this
+      // self.setData({
+      //   currentCategory.id: this.data.currentTab
+      // });
+      this.getCurrentCategory(this.data.currentTab);
+    }
   },
   onHide: function () {
     // 页面隐藏

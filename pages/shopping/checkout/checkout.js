@@ -40,6 +40,7 @@ Page({
       })
     }
     if (options.type){
+      console.log("=========================" + options.type);
       this.setData({
         type: options.type
       })

@@ -1,3 +1,22 @@
+.img-plus-style {  
+  height: 100rpx;  
+  width: 100rpx;  
+  position: fixed;  
+  bottom: 220rpx;  
+  right: 30rpx;  
+  opacity: 1
+}  
+.img-plus-style1 {  
+  height: 100rpx;  
+  width: 100rpx;  
+  position: fixed;  
+  bottom: 130rpx;  
+  right: 30rpx;   
+  opacity: 1
+}  
+.zindex100{z-index: 100}
+.yc{opacity: 0}
+
 .search {
   height: 88rpx;
   width: 100%;
@@ -698,3 +717,36 @@ a-section .cont{
 .icon-pull-down:before { content: "\e996"; }
 
 .icon-loading:before { content: "\e9ac"; }
+
+
+
+.navBox {
+  display: flex;
+  flex-wrap: wrap;
+  height: 450rpx;
+  background: #fff;
+  margin-top: 0rpx;
+  padding: 20rpx 0;
+  box-sizing: border-box;
+  font-size: 9pt;
+}
+
+.navBtn {
+  /* 33.3 25 20 */
+  width: 25%;
+  text-align: center;
+  padding-top: 15rpx;
+  box-sizing: border-box;
+}
+
+.navImg {
+  display: block;
+  width: 125rpx;
+  height: 125rpx;
+  margin: 0 auto;
+  border-radius: 50%;
+}
+
+.navName {
+  padding: 10rpx 0;
+}

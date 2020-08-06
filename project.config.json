@@ -4,12 +4,25 @@
 		"urlCheck": false,
 		"es6": true,
 		"postcss": true,
+		"preloadBackgroundData": false,
 		"minified": true,
-		"newFeature": true
+		"newFeature": true,
+		"coverView": true,
+		"autoAudits": false,
+		"showShadowRootInWxmlPanel": true,
+		"scopeDataCheck": false,
+		"checkInvalidKey": true,
+		"checkSiteMap": true,
+		"uploadWithSourceMap": true,
+		"babelSetting": {
+			"ignore": [],
+			"disablePlugins": [],
+			"outputPath": ""
+		}
 	},
 	"compileType": "miniprogram",
-	"libVersion": "1.9.0",
-	"appid": "wx213d7c88ef38d750",
+	"libVersion": "2.12.0",
+	"appid": "wxbb60bb0bd0d6081f",
 	"projectname": "hz-mall",
 	"simulatorType": "wechat",
 	"simulatorPluginLibVersion": {},

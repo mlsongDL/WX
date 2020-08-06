@@ -1,6 +1,6 @@
-// var NewApiRootUrl = 'https://shop.51shop.ink/demo/api/'
-
-var NewApiRootUrl = 'http://127.0.0.1:8080/shop/api/';
+var NewApiRootUrl = 'http://localhost:8080/shop/api/';
+// var NewApiRootUrl = 'http://119.45.121.238:8080/shop/api/';
+// var NewApiRootUrl = 'https://www.xacw.xyz/shop/api/';
 //  var NewApiRootUrl = 'http://192.168.2.15:8080/platform-framework/api/';
 // var NewApiRootUrl = 'http://dev.51shop.ink/demo/api/'
 // var NewApiRootUrl = 'https://fx.51shop.ink/drsshop/api/'

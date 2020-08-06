@@ -20,6 +20,7 @@
         </view>
         <view class="tx tsbox">
             <text class="name">{{goods.name || ''}}</text>
+            <text class="sales">月售：{{goods.sell_volume || '0'}}</text>
         </view> 
         <text class="tx desc" wx:if="{{goods.goods_brief}}">{{goods.goods_brief}}</text> 
         <view class="brand" wx:if="{{brand.name}}">
@@ -82,6 +83,13 @@
               <text>{{comment.data.nickname}}</text>
             </view>
             <view class="time">{{comment.data.add_time}}</view>
+          </view>
+          <view class="row">
+              <image class="star" src="https://itek-1252190015.cos.ap-nanjing.myqcloud.com/*/20200806/11303540759919.png"></image>
+              <image class="star" src="https://itek-1252190015.cos.ap-nanjing.myqcloud.com/*/20200806/11303540759919.png"></image>
+              <image class="star" src="https://itek-1252190015.cos.ap-nanjing.myqcloud.com/*/20200806/11303540759919.png"></image>
+              <image class="star" src="https://itek-1252190015.cos.ap-nanjing.myqcloud.com/*/20200806/11303540759919.png"></image>
+              <image class="star" src="https://itek-1252190015.cos.ap-nanjing.myqcloud.com/*/20200806/11303540759919.png"></image>
           </view>
           <view class="content">
             {{comment.data.content}}
@@ -250,7 +258,7 @@
 
     </view>
   </view>
-  <button class="{{type==2?'r':'c'}}" data-ntype="2" wx:if="{{type==0 || type==2}}" disabled="{{isY}}" bindtap="buyGoods">{{type==2?'立即秒杀':'立即购买'}}</button>
+  <button class="{{type==2?'r':'c'}}" data-ntype="{{type==2?'2':''}}" wx:if="{{type==0 || type==2}}" disabled="{{isY}}" bindtap="buyGoods">{{type==2?'立即秒杀':'立即购买'}}</button>
   <button class="c" data-activitytype="1" disabled="{{isY}}" wx:if="{{type==1}}" bindtap="buyGoods">单独购买¥{{yprice || goods.retail_price}}</button>
   <button class="r" wx:if="{{type==0}}" bindtap="addToCart">加入购物车</button>
   <button class="r" data-activitytype="2" data-groupBuyingId="{{groupBuyingId}}" data-ntype="1" wx:if="{{type==1}}"  bindtap="buyGoods">发起拼团¥{{checkedSpecPrice || goods.group_price}}</button>

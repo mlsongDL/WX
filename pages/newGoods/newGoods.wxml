@@ -1,11 +1,9 @@
 <view class="container">
   <view class="brand-info">
     <view class="name">
-      <image class="img" src="{{bannerInfo.img_url}}" background-size="cover"></image>
+      <image class="img" src="https://itek-1252190015.cos.ap-nanjing.myqcloud.com/*/20200609/102303124a07e1.jpg" background-size="cover"></image>
       <view class="info-box">
         <view class="info">
-          <text class="txt">{{bannerInfo.name}}</text>
-          <text class="line"></text>
         </view>
       </view>
     </view>

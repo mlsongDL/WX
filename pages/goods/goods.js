@@ -570,6 +570,7 @@ Page({
   buyGoods: function(e) {
     var that = this; 
     var ntype = e.target.dataset.ntype || ''
+    console.log("================" + ntype)
     var activityType = e.target.dataset.activitytype || '';
     var groupBuyingId = e.target.dataset.groupbuyingid || '';
     that.setData({

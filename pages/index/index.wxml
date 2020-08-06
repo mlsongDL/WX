@@ -7,11 +7,37 @@
   </view>
   <swiper class="banner" indicator-dots="true" autoplay="true" interval="3000" duration="1000">
     <swiper-item wx:for="{{banner}}" wx:key="{{item.id}}">
-      <navigator url="{{item.link}}">
-        <image src="{{item.image_url}}" background-size="cover"></image>
-      </navigator>
+      <image src="{{item.image_url}}" background-size="cover"></image>
     </swiper-item>
   </swiper>
+
+  <!-- 精品分类 -->
+  <view class='a-section fx-selected'>
+    <view class="h">
+        <label class="txt">精品分类</label>
+        <navigator class='more' url="/pages/catalog/catalog" open-type="switchTab">全部</navigator> 
+    </view>
+    <view class="divLine"></view>
+    <view class='navBox'>
+        <view class='navBtn' wx:for="{{categoryList}}" wx:key="{{item.id}}">
+          <navigator bindtap="kind" url="/pages/catalog/catalog" open-type="switchTab" data-id="{{item.id}}">
+            <image class='navImg' src='{{item.icon_url}}'></image>
+            <view class='navName'>{{item.name}}</view>
+          </navigator>
+        </view>
+    </view>
+  
+  </view>
+
+
+  <button class='service' open-type="contact">
+    <view>  
+      <contact-button type="default-dark" size="20" session-from="weapp" class="img-plus-style zindex100 yc">
+      </contact-button>
+      <image src="https://itek-1252190015.cos.ap-nanjing.myqcloud.com/*/20200805/1049382661a9fe.png" class="img-plus-style1"></image>
+    </view>
+  </button>
+
   <!-- 秒杀 -->
   <view class='spike'><index-type-data name="秒杀" data="{{skill}}" type="2"></index-type-data></view> 
   <!-- 团购 -->
@@ -19,7 +45,7 @@
   <view class='a-section fx-selected'>
     <view class="h">
         <label class="txt">专题精选</label>
-         <navigator class='more' url="../topic/topic" open-type="switchTab">更多</navigator> 
+         <!-- <navigator class='more' url="../topic/topic" open-type="switchTab">更多</navigator>  -->
     </view>
     <view class='b'>
        <view class='selBox cont'>
